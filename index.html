@@ -1,7 +1,5 @@
 ---
 layout: default
 ---
-<div class="posts">
-  {% for post in site.posts limit:10 %}
-  {% endfor %}
-</div>
+{% include JB/posts_collate %}
+{% assign posts_collate = site.posts %}
